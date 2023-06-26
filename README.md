@@ -1,5 +1,7 @@
 ![Ekran Alıntısı2](https://github.com/Aybukehso/ErpaTask/assets/115698658/9b1cd4e4-e362-41b7-850e-69c5515ed89e)
-![Uploading Ekran Alıntısı1.PNG…]()
+
+
+
 Başlık: .NET Core Web API ve Flutter ile Banka Uygulaması
 
 Açıklama:
