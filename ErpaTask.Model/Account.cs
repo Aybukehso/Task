@@ -11,11 +11,11 @@ namespace ErpaTask.Model
         public decimal  Amount { get; set; }
 
 		// Hesap bir kullanıcıya ait olmalı
-		public int UserId { get; set; }
-		public User User { get; set; }
+		public Guid UserId { get; set; }
+		public virtual User? User { get; set; }
 
 		// Hesap bir bankaya ait olmalı
-		public int BankId { get; set; }
-		public Bank Bank { get; set; }
+		public Guid BankId { get; set; }
+		public virtual Bank? Bank { get; set; }
 	}
 }

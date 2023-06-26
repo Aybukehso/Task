@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ErpaTask.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230625203836_mig_1")]
+    [Migration("20230625211222_mig_1")]
     partial class mig_1
     {
         /// <inheritdoc />
@@ -34,10 +34,7 @@ namespace ErpaTask.Data.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("BankId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("BankId1")
+                    b.Property<Guid>("BankId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("IsDeleted")
@@ -47,10 +44,7 @@ namespace ErpaTask.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("UserId1")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("isAdmin")
@@ -58,9 +52,9 @@ namespace ErpaTask.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BankId1");
+                    b.HasIndex("BankId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Accounts");
                 });
@@ -72,11 +66,9 @@ namespace ErpaTask.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Iban")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Img")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -130,13 +122,13 @@ namespace ErpaTask.Data.Migrations
                 {
                     b.HasOne("ErpaTask.Model.Bank", "Bank")
                         .WithMany("Accounts")
-                        .HasForeignKey("BankId1")
+                        .HasForeignKey("BankId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ErpaTask.Model.User", "User")
                         .WithMany("Accounts")
-                        .HasForeignKey("UserId1")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
