@@ -1,5 +1,6 @@
-![Ekran Alıntısı1](https://github.com/Aybukehso/ErpaTask/assets/115698658/b2335806-b1c8-4090-8f1f-a71a29ca45b2)
-![Ekran Alıntısı2](https://github.com/Aybukehso/ErpaTask/assets/115698658/9b1cd4e4-e362-41b7-850e-69c5515ed89e)
+![Ekran Alıntısı2](https://github.com/Aybukehso/Task/assets/115698658/28e79019-36ec-4660-bf97-e7d2701e27ab)
+![Ekran Alıntısı1](https://github.com/Aybukehso/Task/assets/115698658/a3de5a65-926a-4608-8388-1fa4569a0f97)
+
 
 
 
